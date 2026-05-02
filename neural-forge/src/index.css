@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 5%;
+    --foreground: 213 27% 92%;
+    --card: 220 16% 8%;
+    --card-foreground: 213 27% 92%;
+    --popover: 220 16% 8%;
+    --popover-foreground: 213 27% 92%;
+    --primary: 210 100% 67%;
+    --primary-foreground: 220 13% 5%;
+    --secondary: 220 16% 12%;
+    --secondary-foreground: 213 27% 92%;
+    --muted: 220 16% 12%;
+    --muted-foreground: 215 14% 65%;
+    --accent: 32 32% 57%;
+    --accent-foreground: 220 13% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 213 27% 92%;
+    --border: 220 16% 18%;
+    --input: 220 16% 18%;
+    --ring: 210 100% 67%;
+    --radius: 0.5rem;
+
+    --forge-deep: 220 13% 7%;
+    --forge-surface: 220 16% 11%;
+    --forge-mist: 213 27% 92%;
+    --forge-cool: 215 14% 76%;
+    --forge-gold: 32 32% 57%;
+    --forge-bronze: 28 30% 50%;
+    --forge-cyan: 210 100% 67%;
+    --forge-teal: 178 63% 54%;
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background-color: hsl(var(--forge-deep));
+    cursor: none;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: hsl(var(--forge-cyan) / 0.25);
+    color: hsl(var(--forge-mist));
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--forge-deep));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--forge-gold) / 0.3);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--forge-gold) / 0.5);
+  }
+}
+
+@layer components {
+  .forge-text-gold {
+    background: linear-gradient(135deg, hsl(var(--forge-gold)) 0%, hsl(var(--forge-bronze)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .forge-text-cyan {
+    background: linear-gradient(135deg, hsl(var(--forge-cyan)) 0%, hsl(var(--forge-teal)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .forge-glass {
+    background: hsl(var(--forge-surface) / 0.6);
+    backdrop-filter: blur(20px) saturate(1.2);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .forge-glass-strong {
+    background: hsl(var(--forge-surface) / 0.8);
+    backdrop-filter: blur(40px) saturate(1.4);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+
+  .forge-card {
+    background: hsl(var(--forge-surface));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 4px 24px hsl(220 13% 5% / 0.4);
+    transition: var(--transition-smooth);
+  }
+
+  .forge-card:hover {
+    border-color: hsl(var(--forge-cyan) / 0.3);
+    box-shadow: 0 0 40px hsl(var(--forge-cyan) / 0.15), 0 4px 24px hsl(220 13% 5% / 0.4);
+    transform: translateY(-2px);
+  }
+
+  .forge-input {
+    background: hsl(var(--forge-deep));
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--forge-mist));
+    font-family: 'Courier Prime', monospace;
+    transition: var(--transition-smooth);
+  }
+
+  .forge-input:focus {
+    outline: none;
+    border-color: hsl(var(--forge-cyan) / 0.6);
+    box-shadow: 0 0 0 3px hsl(var(--forge-cyan) / 0.1);
+  }
+
+  .forge-btn {
+    position: relative;
+    overflow: hidden;
+    background: hsl(var(--forge-surface));
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--forge-mist));
+    font-family: 'Courier Prime', monospace;
+    transition: var(--transition-smooth);
+  }
+
+  .forge-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, hsl(var(--forge-cyan)) 0%, hsl(var(--forge-teal)) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .forge-btn:hover::before {
+    opacity: 0.1;
+  }
+
+  .forge-btn:hover {
+    border-color: hsl(var(--forge-cyan) / 0.5);
+    box-shadow: 0 0 40px hsl(var(--forge-cyan) / 0.15);
+  }
+
+  .forge-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    background: hsl(var(--forge-surface));
+    border: 1px solid hsl(var(--border));
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.75rem;
+    color: hsl(var(--forge-cool));
+    transition: var(--transition-smooth);
+  }
+
+  .forge-tag:hover {
+    border-color: hsl(var(--forge-gold) / 0.5);
+    color: hsl(var(--forge-gold));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
