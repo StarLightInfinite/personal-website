@@ -119,7 +119,7 @@ export default function DevPrologue() {
             <div className="prologue-text mt-10 flex flex-wrap gap-4">
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <MapPin size={14} className="text-[hsl(var(--forge-cyan))]" />
-                <span className="font-mono text-xs">深圳 / Shenzhen</span>
+                <span className="font-mono text-xs">广州 / Guangzhou</span>
               </div>
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <Calendar size={14} className="text-[hsl(var(--forge-cyan))]" />

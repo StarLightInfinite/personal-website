@@ -119,10 +119,10 @@ export default function HeroSection() {
       <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, hsl(210 100% 67% / 0.06) 0%, transparent 70%)' }} />
 
       <div ref={textRef} className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <div className="hero-line1 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-[0.9]">
+        <div className="hero-line1 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-none">
           <span className="text-[hsl(var(--forge-mist))]">星光</span>
         </div>
-        <div className="hero-line2 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-[0.9] mt-2">
+        <div className="hero-line2 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-none mt-4">
           <span className="forge-text-gold">无限</span>
         </div>
 
