@@ -8,24 +8,24 @@ gsap.registerPlugin(ScrollTrigger)
 
 const techGroups = [
   {
-    title: 'Frontend / 前端架构',
-    icon: Globe,
-    items: ['React / Next.js', 'TypeScript', 'Tailwind CSS', 'Three.js / WebGL', 'GSAP / Framer'],
-  },
-  {
-    title: 'Backend / 后端系统',
+    title: '后端架构 / Backend',
     icon: Server,
-    items: ['Node.js / NestJS', 'Python / FastAPI', 'PostgreSQL', 'Redis', 'GraphQL'],
+    items: ['PHP / Laravel', 'Node.js', 'Python', 'MySQL', 'Redis'],
   },
   {
-    title: 'AI / 智能引擎',
+    title: '前端开发 / Frontend',
+    icon: Globe,
+    items: ['Vue / React', 'TypeScript', 'H5 小游戏', 'WebSocket', 'Canvas'],
+  },
+  {
+    title: 'AI 工程 / AI Engineering',
     icon: Brain,
-    items: ['OpenAI API', 'LangChain', 'Vector DB', 'Fine-tuning', 'RAG Pipeline'],
+    items: ['RAG 知识库', 'PaddleAI', 'Pytorch', 'AIGC 工具', 'LLM 应用'],
   },
   {
-    title: 'DevOps / 工程化',
+    title: '架构与运维 / DevOps',
     icon: GitBranch,
-    items: ['Docker / K8s', 'CI/CD', 'AWS / Vercel', 'Monitoring', 'Git'],
+    items: ['微服务架构', '高并发优化', '数据治理', '监控体系', '容器化'],
   },
 ]
 

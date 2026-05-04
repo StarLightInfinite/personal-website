@@ -128,12 +128,12 @@ export default function HeroSection() {
 
         <div className="hero-sub mt-8 md:mt-12">
           <p className="font-mono text-sm md:text-base text-[hsl(var(--forge-cool))] tracking-wider">
-            {t('星核造物 / 独立开发者 / AI 全栈工程师', 'Star Core Creator / Indie Dev / AI Full-Stack Engineer')}
+            {t('黄榆钧 / 技术专家 / AI 全栈开发者', 'HUANG Yujun / Tech Expert / AI Full-Stack Developer')}
           </p>
           <p className="mt-3 text-[hsl(var(--forge-mist))] text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
             {t(
-              '以代码为锤，以数据为砧，锻造智能时代的数字造物',
-              'Forging digital creations of the intelligent era with code and data'
+              '11年技术深耕 · 游戏行业9年 · 百万级高并发 · AI赋能业务',
+              '11 Years Experience · 9 Years in Gaming · Million-Level Concurrency · AI Empowerment'
             )}
           </p>
         </div>

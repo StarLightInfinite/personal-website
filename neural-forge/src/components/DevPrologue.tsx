@@ -8,28 +8,28 @@ gsap.registerPlugin(ScrollTrigger)
 
 const timeline = [
   {
-    period: '2024 — NOW',
-    title: '独立开发者 / Indie Developer',
-    desc: '全职独立开发，专注 AI 应用落地与全栈产品孵化',
-    enDesc: 'Full-time indie dev, focused on AI applications and full-stack product incubation',
+    period: '2025.04 — NOW',
+    title: '技术专家 / Tech Expert',
+    desc: '广州龙锐科技有限公司，提供发行业务技术支持，开发聚合AIGC工具，优化服务器架构',
+    enDesc: 'Guangzhou Longrui Tech - Providing technical support for publishing, developing AIGC tools, optimizing server architecture',
   },
   {
-    period: '2022 — 2024',
-    title: '高级全栈工程师 / Senior Full-Stack',
-    desc: '主导多个 AI SaaS 产品从 0 到 1 的技术架构与团队建设',
-    enDesc: 'Led tech architecture and team building for multiple AI SaaS products',
+    period: '2025.01 — 2025.03',
+    title: '技术专家 / Tech Expert',
+    desc: '广州天纵信息技术有限公司，负责投放平台需求开发，解决重点难点问题',
+    enDesc: 'Guangzhou Tianzong Tech - Leading ad platform development, solving critical technical challenges',
   },
   {
-    period: '2019 — 2022',
-    title: '前端技术负责人 / Frontend Lead',
-    desc: '负责大型数据可视化平台与低代码引擎的前端架构',
-    enDesc: 'Frontend architecture for large-scale data viz platforms and low-code engines',
+    period: '2019.08 — 2024.12',
+    title: '技术经理 / Tech Manager',
+    desc: '广州天蝎互动网络科技有限公司，技术团队管理，架构管控，全业务技术支持',
+    enDesc: 'Guangzhou Scorpio Interactive - Tech team management, architecture governance, full-business technical support',
   },
   {
-    period: '2017 — 2019',
-    title: '全栈开发工程师 / Full-Stack Engineer',
-    desc: '参与企业级中台系统开发，积累全链路工程经验',
-    enDesc: 'Enterprise mid-platform development, building full-stack engineering experience',
+    period: '2016.06 — 2019.08',
+    title: 'PHP组长 / PHP Team Lead',
+    desc: '广州乐牛软件科技有限公司，游戏研发后台、运营后台、广告发行后台开发',
+    enDesc: 'Guangzhou Leniu Software - Game backend, ops backend, ad publishing platform development',
   },
 ]
 
@@ -106,29 +106,32 @@ export default function DevPrologue() {
 
             <div className="mt-10 space-y-6">
               <p className="prologue-text text-[hsl(var(--forge-cool))] leading-relaxed text-lg">
-                {t('我相信技术的终极价值在于创造。从一行代码到一个产品，从一次推理到一次变革，每一个数字造物都承载着改变现实世界的潜能。', 'I believe the ultimate value of technology lies in creation. From a line of code to a product, from inference to transformation.')}
+                {t('11年技术深耕，游戏行业9年经验。覆盖研发、发行、运营、客服、财务全链路，善于用技术推动业务增长。', '11 years of tech experience, 9 years in gaming industry. Full-stack coverage across R&D, publishing, ops, customer service, and finance.')}
               </p>
               <p className="prologue-text text-[hsl(var(--forge-cool))] leading-relaxed">
-                {t('作为独立开发者，我专注于将前沿 AI 能力转化为可落地、可规模化的商业产品。不追逐概念，只交付结果。', 'As an indie developer, I focus on turning cutting-edge AI capabilities into scalable, commercial products.')}
+                {t('百万级高并发实战经验，擅长架构治理、性能优化、数据治理。5年技术管理经验，带领10人团队，降本增效成果显著。', 'Proven experience with million-level concurrency, skilled in architecture governance, performance optimization, and data governance. 5+ years tech management leading 10-person teams.')}
+              </p>
+              <p className="prologue-text text-[hsl(var(--forge-cool))] leading-relaxed">
+                {t('PMP认证，AI大模型开发工程师认证，自研项目获「中国制造2025」国家级奖项及400万资金扶持。', 'PMP certified, AI LLM engineer certified. Self-developed project won "Made in China 2025" national award with ¥4M funding support.')}
               </p>
             </div>
 
             <div className="prologue-text mt-10 flex flex-wrap gap-4">
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <MapPin size={14} className="text-[hsl(var(--forge-cyan))]" />
-                <span className="font-mono text-xs">Remote / 全球远程</span>
+                <span className="font-mono text-xs">深圳 / Shenzhen</span>
               </div>
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <Calendar size={14} className="text-[hsl(var(--forge-cyan))]" />
-                <span className="font-mono text-xs">7+ Years</span>
+                <span className="font-mono text-xs">11+ Years</span>
               </div>
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <Award size={14} className="text-[hsl(var(--forge-gold))]" />
-                <span className="font-mono text-xs">20+ Products</span>
+                <span className="font-mono text-xs">PMP / AI认证</span>
               </div>
               <div className="flex items-center gap-2 text-[hsl(var(--forge-cool))]">
                 <Rocket size={14} className="text-[hsl(var(--forge-teal))]" />
-                <span className="font-mono text-xs">AI First</span>
+                <span className="font-mono text-xs">中国制造2025</span>
               </div>
             </div>
           </div>

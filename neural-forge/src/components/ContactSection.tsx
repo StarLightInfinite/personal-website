@@ -7,8 +7,9 @@ import { Send, Mail, Globe, Feather, MessageCircle } from 'lucide-react'
 gsap.registerPlugin(ScrollTrigger)
 
 const techTags = [
-  'AI Agent', 'LLM', 'RAG', 'Full-Stack', 'SaaS',
-  'Next.js', 'Python', 'TypeScript', 'Cloud', 'MVP',
+  '高并发优化', '微服务架构', '数据中台', 'AIGC 工具',
+  'SDK 开发', '游戏发行', 'RAG 知识库', 'AI 客服',
+  'PMP 管理', '数据治理', '性能调优', '团队建设',
 ]
 
 export default function ContactSection() {
@@ -97,7 +98,7 @@ export default function ContactSection() {
             <span className="forge-text-gold ml-3">{t('连接', 'Connection')}</span>
           </h2>
           <p className="mt-4 text-[hsl(var(--forge-cool))] max-w-lg mx-auto">
-            {t('无论是技术咨询、产品合作还是创业交流，欢迎随时联系。', 'Open for tech consulting, product collaboration, and startup discussions.')}
+            {t('11年经验，寻技术专家职位，期望城市深圳，薪资30-40K。欢迎交流合作。', '11 years experience seeking Tech Expert position in Shenzhen. Expected salary ¥30-40K.')}
           </p>
         </div>
 
