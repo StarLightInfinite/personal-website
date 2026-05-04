@@ -62,11 +62,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
           <div className="lg:col-span-2 footer-col">
             <div className="font-display text-3xl font-medium">
-              <span className="forge-text-gold">Neural</span>
-              <span className="text-[hsl(var(--forge-mist))] ml-1">Forge</span>
+              <span className="forge-text-gold">星光</span>
+              <span className="text-[hsl(var(--forge-mist))] ml-1">无限</span>
             </div>
             <p className="mt-4 text-sm text-[hsl(var(--forge-cool))] max-w-sm leading-relaxed">
-              {t('以 AI 为核，以代码为刃，锻造属于未来的数字造物。', 'Forging digital creations of the future with AI and code.')}
+              {t('11年技术深耕，用代码和数据创造价值。', '11 years of technical excellence, creating value with code and data.')}
             </p>
             <div className="mt-6 font-mono text-xs text-[hsl(var(--forge-cool))] opacity-60">
               <div>BUILD WITH INTENTION.</div>
@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8" style={{ borderTop: '1px solid hsl(var(--border))' }}>
           <div className="font-mono text-xs text-[hsl(var(--forge-cool))] opacity-50">
-            &copy; {new Date().getFullYear()} Neural Forge / 星核造物. All rights reserved.
+            &copy; {new Date().getFullYear()} 黄榆钧 / 星光无限. All rights reserved.
           </div>
           <div className="flex items-center gap-1 font-mono text-xs text-[hsl(var(--forge-cool))] opacity-50">
             <span>Made with</span>

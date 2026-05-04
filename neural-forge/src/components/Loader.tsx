@@ -42,7 +42,7 @@ export default function Loader({ onComplete }: LoaderProps) {
     <div className="loader-overlay fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[hsl(var(--forge-deep))]">
       <div className="relative mb-8">
         <div className="font-mono text-xs tracking-[0.3em] text-[hsl(var(--forge-cool))] uppercase mb-4 text-center">
-          Neural Forge / 星核造物
+          星光无限 / STARLIGHT INFINITE
         </div>
         <div className="font-display text-4xl md:text-6xl font-medium tracking-tight">
           <span className="forge-text-gold">SYSTEM</span>

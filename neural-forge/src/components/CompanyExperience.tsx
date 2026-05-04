@@ -85,70 +85,70 @@ export default function CompanyExperience() {
       <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'linear-gradient(90deg, transparent 49%, hsl(var(--forge-gold)) 49%, hsl(var(--forge-gold)) 51%, transparent 51%)', backgroundSize: '120px 100%' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 company-wrap">
-        <div className="text-center mb-16">
-          <span className="font-mono text-xs tracking-[0.3em] text-[hsl(var(--forge-cyan))] uppercase">
-            {t('职业经历', 'Career Experience')}
+        <div className="text-center mb-10 md:mb-16">
+          <span className="font-mono text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] text-[hsl(var(--forge-cyan))] uppercase">
+            {t('职业经历', 'Career')}
           </span>
-          <h2 className="font-display text-4xl md:text-6xl font-medium mt-4 text-[hsl(var(--forge-mist))]">
+          <h2 className="font-display text-2xl md:text-4xl lg:text-6xl font-medium mt-3 md:mt-4 text-[hsl(var(--forge-mist))]">
             {t('企业', 'Enterprise')}
-            <span className="forge-text-gold ml-3">{t('实战', 'Projects')}</span>
+            <span className="forge-text-gold ml-2 md:ml-3">{t('实战', 'Projects')}</span>
           </h2>
-          <p className="mt-4 text-[hsl(var(--forge-cool))] max-w-2xl mx-auto">
-            {t('11年深耕技术，跨越多家知名企业，从技术骨干到团队管理者', '11 years of technical depth across leading enterprises, from engineer to manager')}
+          <p className="mt-3 text-xs md:text-sm text-[hsl(var(--forge-cool))] max-w-2xl mx-auto px-4 leading-relaxed">
+            {t('11年深耕技术，跨越多家知名企业，从技术骨干到团队管理者', '11 years of technical depth across leading enterprises')}
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {companies.map((company, i) => (
             <div key={i} className="company-card relative">
-              <div className="absolute left-0 top-8 bottom-0 w-[1px] bg-[hsl(var(--border))]" style={{ display: i === companies.length - 1 ? 'none' : 'block' }} />
+              <div className="absolute left-3 md:left-0 top-8 bottom-0 w-[1px] bg-[hsl(var(--border))]" style={{ display: i === companies.length - 1 ? 'none' : 'block' }} />
               
-              <div className="relative pl-8">
-                <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[7px] rounded-full bg-[hsl(var(--forge-gold))] ring-4 ring-[hsl(var(--forge-deep))] z-10" />
+              <div className="relative pl-6 md:pl-8">
+                <div className="absolute left-3 md:left-0 top-0 w-3 h-3 md:w-4 md:h-4 -translate-x-[5px] md:-translate-x-[7px] rounded-full bg-[hsl(var(--forge-gold))] ring-4 ring-[hsl(var(--forge-deep))] z-10" />
                 
-                <div className="bg-[hsl(var(--forge-surface))] rounded-xl p-6 md:p-8 border border-[hsl(var(--border))] hover:border-[hsl(var(--forge-cyan)/0.3)] transition-colors">
+                <div className="bg-[hsl(var(--forge-surface))] rounded-xl p-4 md:p-6 lg:p-8 border border-[hsl(var(--border))] hover:border-[hsl(var(--forge-cyan)/0.3)] transition-colors">
                   {/* 公司头部信息 */}
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4 md:mb-6">
                     <div>
-                      <div className="flex items-center gap-3">
-                        <Building2 size={20} className="text-[hsl(var(--forge-cyan))]" />
-                        <h3 className="font-display text-xl md:text-2xl font-medium text-[hsl(var(--forge-mist))]">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <Building2 size={16} className="text-[hsl(var(--forge-cyan))]" />
+                        <h3 className="font-display text-base md:text-xl lg:text-2xl font-medium text-[hsl(var(--forge-mist))] leading-snug">
                           {company.name}
                         </h3>
                       </div>
-                      <p className="font-mono text-xs text-[hsl(var(--forge-cool))] mt-1 opacity-70">
+                      <p className="font-mono text-[10px] md:text-xs text-[hsl(var(--forge-cool))] mt-1 opacity-70 truncate max-w-[200px] md:max-w-none">
                         {company.enName}
                       </p>
                     </div>
                     <div className="text-left md:text-right">
-                      <p className="font-mono text-sm text-[hsl(var(--forge-cyan))]">{company.period}</p>
-                      <p className="font-mono text-sm text-[hsl(var(--forge-gold))] mt-1">{company.position}</p>
+                      <p className="font-mono text-[11px] md:text-sm text-[hsl(var(--forge-cyan))]">{company.period}</p>
+                      <p className="font-mono text-[11px] md:text-sm text-[hsl(var(--forge-gold))] mt-0.5 md:mt-1">{company.position}</p>
                     </div>
                   </div>
 
                   {/* 核心亮点 */}
-                  <div className="mb-6">
-                    <p className="text-sm text-[hsl(var(--forge-cool))] opacity-80">
+                  <div className="mb-4 md:mb-6">
+                    <p className="text-xs md:text-sm text-[hsl(var(--forge-cool))] opacity-80">
                       <span className="text-[hsl(var(--forge-teal))]">◈ </span>
                       {company.highlight}
                     </p>
                   </div>
 
                   {/* 项目列表 */}
-                  <div className="space-y-4 mb-6">
-                    <p className="font-mono text-xs tracking-wider text-[hsl(var(--forge-cool))] opacity-60 uppercase mb-3">
-                      {t('核心项目 / Key Projects', 'Key Projects')}
+                  <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
+                    <p className="font-mono text-[10px] md:text-xs tracking-wider text-[hsl(var(--forge-cool))] opacity-60 uppercase mb-2 md:mb-3">
+                      {t('核心项目', 'Key Projects')}
                     </p>
                     {company.projects.map((project, j) => (
-                      <div key={j} className="project-item relative pl-4 py-3 border-l-2 border-[hsl(var(--forge-cyan)/0.2)] bg-[hsl(var(--forge-deep))] rounded-r-lg">
-                        <div className="flex items-start gap-2">
-                          <ChevronRight size={14} className="text-[hsl(var(--forge-cyan))] mt-0.5 flex-shrink-0" />
+                      <div key={j} className="project-item relative pl-3 md:pl-4 py-2 md:py-3 border-l-2 border-[hsl(var(--forge-cyan)/0.2)] bg-[hsl(var(--forge-deep))] rounded-r-lg">
+                        <div className="flex items-start gap-1.5 md:gap-2">
+                          <ChevronRight size={12} className="text-[hsl(var(--forge-cyan))] mt-0.5 flex-shrink-0" />
                           <div>
-                            <h4 className="font-medium text-[hsl(var(--forge-mist))] text-sm">{project.name}</h4>
-                            <p className="text-xs text-[hsl(var(--forge-cool))] mt-1 leading-relaxed">{project.desc}</p>
-                            <div className="flex flex-wrap gap-2 mt-2">
+                            <h4 className="font-medium text-[hsl(var(--forge-mist))] text-xs md:text-sm">{project.name}</h4>
+                            <p className="text-[11px] md:text-xs text-[hsl(var(--forge-cool))] mt-0.5 md:mt-1 leading-relaxed line-clamp-2 md:line-clamp-none">{project.desc}</p>
+                            <div className="flex flex-wrap gap-1.5 mt-1.5 md:mt-2">
                               {project.tags.map((tag, k) => (
-                                <span key={k} className="forge-tag text-[10px] px-2 py-0.5">{tag}</span>
+                                <span key={k} className="forge-tag text-[9px] px-1.5 py-0.5 md:text-[10px] md:px-2">{tag}</span>
                               ))}
                             </div>
                           </div>
@@ -158,12 +158,12 @@ export default function CompanyExperience() {
                   </div>
 
                   {/* 成就标签 */}
-                  <div className="flex flex-wrap gap-3 pt-4 border-t border-[hsl(var(--border))]">
-                    <Award size={16} className="text-[hsl(var(--forge-gold))]" />
+                  <div className="flex flex-wrap gap-2 pt-3 md:pt-4 border-t border-[hsl(var(--border))]">
+                    <Award size={14} className="text-[hsl(var(--forge-gold))] hidden md:block" />
                     {company.achievements.map((achievement, j) => (
-                      <span key={j} className="flex items-center gap-1.5 text-xs text-[hsl(var(--forge-cool))] bg-[hsl(var(--forge-gold)/0.08)] px-3 py-1 rounded-full border border-[hsl(var(--forge-gold)/0.15)]">
-                        <TrendingUp size={12} className="text-[hsl(var(--forge-gold))]" />
-                        {achievement}
+                      <span key={j} className="flex items-center gap-1 text-[10px] md:text-xs text-[hsl(var(--forge-cool))] bg-[hsl(var(--forge-gold)/0.08)] px-2 py-0.5 md:px-3 md:py-1 rounded-full border border-[hsl(var(--forge-gold)/0.15)]">
+                        <TrendingUp size={10} className="text-[hsl(var(--forge-gold))] flex-shrink-0" />
+                        <span className="truncate max-w-[130px]">{achievement}</span>
                       </span>
                     ))}
                   </div>

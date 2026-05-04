@@ -30,7 +30,7 @@ const techGroups = [
 ]
 
 const codeStream = [
-  'const neural = new Forge({ intent: "create" });',
+  'const starlight = new Forge({ intent: "infinite" });',
   'await neural.synthesize({ data, model: "gpt-4" });',
   'export const deploy = async (target: Cloud) => {',
   '  return pipeline.optimize().scale().monitor();',
