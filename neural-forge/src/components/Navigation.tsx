@@ -11,6 +11,7 @@ const navItems = [
   { zh: '首屏', en: 'Hero', href: '#hero' },
   { zh: '技术矩阵', en: 'Tech', href: '#tech' },
   { zh: '序章', en: 'About', href: '#about' },
+  { zh: '经历', en: 'Experience', href: '#experience' },
   { zh: '作品', en: 'Works', href: '#works' },
   { zh: '联络', en: 'Contact', href: '#contact' },
 ]
@@ -60,8 +61,8 @@ export default function Navigation() {
           onClick={(e) => { e.preventDefault(); handleClick('#hero') }}
           className="font-display text-xl font-semibold tracking-tight"
         >
-          <span className="forge-text-gold">Neural</span>
-          <span className="text-[hsl(var(--forge-mist))] ml-1">Forge</span>
+          <span className="forge-text-gold">星光</span>
+          <span className="text-[hsl(var(--forge-mist))] ml-1">无限</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

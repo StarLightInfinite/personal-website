@@ -8,6 +8,7 @@ import HeroSection from '@/components/HeroSection'
 import TechMatrix from '@/components/TechMatrix'
 import DevPrologue from '@/components/DevPrologue'
 import ProjectGallery from '@/components/ProjectGallery'
+import CompanyExperience from '@/components/CompanyExperience'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 
@@ -27,6 +28,7 @@ function AppContent() {
         <HeroSection />
         <TechMatrix />
         <DevPrologue />
+        <CompanyExperience />
         <ProjectGallery />
         <ContactSection />
       </main>
