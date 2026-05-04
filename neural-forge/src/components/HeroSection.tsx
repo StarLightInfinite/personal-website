@@ -120,10 +120,10 @@ export default function HeroSection() {
 
       <div ref={textRef} className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <div className="hero-line1 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-[0.9]">
-          <span className="text-[hsl(var(--forge-mist))]">NEURAL</span>
+          <span className="text-[hsl(var(--forge-mist))]">星光</span>
         </div>
         <div className="hero-line2 font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-tighter leading-[0.9] mt-2">
-          <span className="forge-text-gold">FORGE</span>
+          <span className="forge-text-gold">无限</span>
         </div>
 
         <div className="hero-sub mt-8 md:mt-12">
