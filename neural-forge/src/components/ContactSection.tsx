@@ -98,7 +98,7 @@ export default function ContactSection() {
             <span className="forge-text-gold ml-3">{t('连接', 'Connection')}</span>
           </h2>
           <p className="mt-4 text-[hsl(var(--forge-cool))] max-w-lg mx-auto">
-            {t('11年经验，寻技术专家职位，期望城市深圳，薪资30-40K。欢迎交流合作。', '11 years experience seeking Tech Expert position in Shenzhen. Expected salary ¥30-40K.')}
+            {t('11年经验，寻技术专家职位，期望城市广州，薪资30-40K。欢迎交流合作。', '11 years experience seeking Tech Expert position in Guangzhou. Expected salary ¥30-40K.')}
           </p>
         </div>
 

@@ -101,7 +101,7 @@ export default function DevPrologue() {
             </span>
             <h2 className="prologue-title font-display text-4xl md:text-5xl lg:text-6xl font-medium mt-4 text-[hsl(var(--forge-mist))] leading-tight">
               {t('关于', 'About')}
-              <span className="forge-text-gold block mt-1">Neural Forge</span>
+              <span className="forge-text-gold block mt-1">星光无限</span>
             </h2>
 
             <div className="mt-10 space-y-6">
